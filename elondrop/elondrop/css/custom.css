@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+.web3-modal, .web3-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.web3-modal-scroll-container {
+    max-height: 500px; /* Set the desired height */
+    overflow-y: auto;
+  }
+.web3-overlay {
+    height: 100%;
+    background: rgba(23, 23, 23, .8);
+    backdrop-filter: blur(5px);
+    z-index: -98;
+}
+
+.web3-modal {
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 500px;
+    height: fit-content;
+    padding: 21px 0 0;
+    background: #fff;
+    border-radius: 60px;
+    z-index: 99999;
+    font-family: Inter, sans-serif;
+}
+
+.web3-modal-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    text-align: center;
+}
+
+.web3-modal-items {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 21px;
+}
+
+.web3-modal .item {
+    padding: 15px 34px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.web3-modal .item:hover {
+    background: #fafafa;
+    border-radius: 20px;
+}
+
+.web3-modal .item div {
+    display: flex;
+    align-items: center;
+}
+
+.web3-modal .item:last-child {
+    border-bottom: none;
+}
+
+.web3-modal .item span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-left: 11px;
+}
+
+.web3-modal .item .icon {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.web3-modal .item .arrow {
+    height: 12px;
+    width: 7.4px;
+    background: url('/assets/web3-modal/images/arrow.svg') no-repeat;
+}
+
+.arrow::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+@media (prefers-color-scheme: dark) {
+    .web3-modal {
+        background: #1c1c1c;
+        color: #fff;
+    }
+
+    .web3-modal-items {
+        border-top: 1px solid #E4DDDD;
+    }
+
+    .web3-modal .item span {
+        color: #fff;
+    }
+
+    .web3-modal .item .arrow {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
+    .web3-modal-title {
+        color: #fff;
+    }
+
+    .web3-modal .item:hover {
+        background: #262525;
+    }
+
+    .swal2-popup {
+        background: #1c1c1c;
+        color: #ffffff;
+    }
+
+    .swal2-styled.swal2-confirm {
+background-color: #3e7022;
+}
+
+.swal2-styled.swal2-confirm:focus {
+box-shadow: 0 0 0 3px #3e7022;
+}
+
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff; /* Change text color to white */
+    background-color: #000000; /* Change background color to black */
+    background-image: none;
+    border: 1px solid #ffffff; /* Change border color to white */
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #4d90fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(77, 144, 254, 0.25);
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom:15px;
+  }
+  
+  .row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .icon img{
+width:50px !important;
+border-radius: 10px;
+  }
+.wallet-icon{
+    max-width: 100px !important;
+}
